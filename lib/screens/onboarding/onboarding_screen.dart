@@ -45,15 +45,25 @@ class OnBoardingScreen extends StatelessWidget {
                               ),
                             ),
                             child: Center(
-                              child: Text(
-                                'ENTER THE SHOP',
-                                style: GoogleFonts.bebasNeue(
-                                  fontSize: 48,
-                                  fontWeight: FontWeight.bold,
-                                  color: AppColors.tertiary,
+                              child: SizedBox(
+                                width: double.infinity,
+                                child: FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  alignment: Alignment.center,
+                                  child: Text(
+                                    'ENTER THE SHOP',
+                                    style: GoogleFonts.bebasNeue(
+                                      fontSize: 36,
+                                      fontWeight: FontWeight.bold,
+                                      color: AppColors.tertiary,
+                                    ),
+                                  ),
                                 ),
                               ),
-                            ),
+
+                            )
+
+
                           ),
 
                         ),

@@ -48,23 +48,26 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Row(
                     children: [
-                      Text(
-                        'TRENDING NOW ',
-                        style: GoogleFonts.bebasNeue(
-                          fontSize: 48,
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.neutral,
+                      Expanded(
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            'TRENDING NOW',
+                            style: GoogleFonts.bebasNeue(
+                              fontSize: 48,
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.neutral,
+                            ),
+                          ),
                         ),
                       ),
+
                       const SizedBox(width: 8),
+
                       Container(
                         width: 100,
                         height: 8,
-                        decoration: BoxDecoration(
-                          color: AppColors.neutral,
-
-
-                        ),
                       ),
                     ],
                   ),
