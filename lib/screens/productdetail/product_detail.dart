@@ -47,11 +47,8 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                               width: 320,
                               height: 200,
                               color: Colors.white,
-                              child: const Icon(
-                                Icons.image_outlined,
-                                size: 60,
-                                color: Colors.black26,
-                              ),
+                              child: Image.asset(product.imageUrl,
+                                  fit: BoxFit.contain),
                             ),
                           ),
                         ),
